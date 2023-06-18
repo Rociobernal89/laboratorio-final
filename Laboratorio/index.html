@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso web</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <form action="formulario.php" method="POST" name="registro" class="container">
+    <h1>Regístrate</h1>
+    <label for="nombre">Nombre <span>(Obligatorio)</span></label>
+    <input type="text" name="nombre" id="nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,}" required>
+    <label for="apellido1">Primer apellido <span>(Obligatorio)</span></label>
+    <input type="text" name="apellido1" id="apellido1" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,}" required>
+    <label for="apellido2">Segundo apellido <span>(Obligatorio)</span></label>
+    <input type="text" name="apellido2" id="apellido2" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,}" required>
+    <label for="email">Email <span>(Obligatorio)</span></label>
+    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+    <label for="usuario">Nombre de usuario <span>(Obligatorio)</span></label>
+    <input type="text" name="usuario" id="usuario" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,}" required>
+    <label for="contraseña">Contraseña <span>(Máximo 8 caracteres)</span></label>
+    <input type="password" name="contraseña" id="contraseña" pattern=".{4,8}" required>
+
+    <button type="submit">Acceder</button>
+
+  </form>
+
+</body>
+
+</html>
